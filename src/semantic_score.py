@@ -2,7 +2,8 @@ import re
 import warnings
 import pandas as pd
 
-def calculate_similarity_scores(evaluator_content, student_content):
+def calculate_similarity_scores(evaluator_content, student_content,model):
+    model=model
     def create_dictionary(content):
         # Remove numeric indices before "Question" and "Answer" words, preserving the colon
         content_without_indices = re.sub(r'(\b\d+\.\s*Question:)', 'Question:', content)
@@ -43,7 +44,7 @@ def calculate_similarity_scores(evaluator_content, student_content):
     for fn in eval_dic.keys():
         sentence_1 = eval_dic[fn]
         sentence_2 = std_dic[fn]
-        result = check_similarity(sentence_1, sentence_2)
+        result = check_similarity(sentence_1, sentence_2,model)
 
         # Extracting percentage value from the tuple
         percentage = float(result[1].strip('%'))
