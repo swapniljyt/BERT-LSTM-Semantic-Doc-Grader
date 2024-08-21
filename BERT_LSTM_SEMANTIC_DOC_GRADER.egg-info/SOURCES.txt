@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+BERT_LSTM_SEMANTIC_DOC_GRADER.egg-info/PKG-INFO
+BERT_LSTM_SEMANTIC_DOC_GRADER.egg-info/SOURCES.txt
+BERT_LSTM_SEMANTIC_DOC_GRADER.egg-info/dependency_links.txt
+BERT_LSTM_SEMANTIC_DOC_GRADER.egg-info/top_level.txt
+src/__init__.py
+src/semantic_score.py

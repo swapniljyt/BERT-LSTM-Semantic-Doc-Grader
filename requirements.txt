@@ -5,3 +5,6 @@ pandas
 numpy
 tensorflow
 ipykernel
+streamlit
+
+-e.
